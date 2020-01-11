@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package demo;
+
+service Greeter {
+  rpc SayHello (ProtoRequest) returns (ProtoResponse) {}
+}
+
+message ProtoRequest {
+  int32 id = 1;
+  string query = 2;    
+}
+
+message ProtoResponse {
+  int32 id = 1;
+  repeated int32 values = 2;
+}
