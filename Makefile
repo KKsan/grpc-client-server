@@ -14,7 +14,7 @@ PROTOS_PATH = protos
 
 demo_client: messages.pb.o messages.grpc.pb.o demo_client.o 
 	$(CXX) $^ $(LDFLAGS) -o $@
-demo_server: messages.ph.o messages.grpc.pb.o demo_server.o 
+demo_server: messages.pb.o messages.grpc.pb.o demo_server.o 
 	$(CXX) $^ $(LDFLAGS) -o $@
 
 %.grpc.pb.cc: $(PROTOS_PATH)/messages.proto

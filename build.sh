@@ -1,7 +1,6 @@
 make clean
 make messages.grpc.pb.cc messages.pb.cc
-make
-
+make demo_client demo_server
 
 #generate message classes
 #protoc --proto_path=protos --cpp_out=. protos/messages.proto
