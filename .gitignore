@@ -4,8 +4,8 @@
 .DS_Store
 
 #grpc auto generated code
-*.pb.h
-*.pb.cc
+# *.pb.h
+# *.pb.cc
 
 #compiled object files
 *.o
